@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guantanamera Bar · Bartender y Open Bar para eventos en Lima</title>
+<meta name="description" content="Barra móvil, bartender uniformado y cócteles preparados al momento en tu casa o local. Cotiza tu evento por WhatsApp.">
+<!-- Quitar noindex cuando el cliente complete el contenido pendiente. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#111424">
+<link rel="icon" type="image/png" href="img/favicon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guantanamera Bar · Bartender y Open Bar para eventos en Lima">
+<meta property="og:description" content="Tú disfruta tu evento. La barra corre por nuestra cuenta.">
+<meta property="og:image" content="https://aoruef.github.io/landing-assets-public/Guantanamera/20261011_Landing/img/hero-poster.jpg">
+<meta property="og:locale" content="es_PE">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script>
+window.dataLayer = window.dataLayer || [];
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NPBJ5HSP');
+</script>
+
+<style>
+:root{
+  --bg:#111424; --surface:#1a1e36; --surface-2:#222747; --line:#2e3459;
+  --amber:#FDB43A; --amber-dark:#e9a022; --copper:#E09766;
+  --text:#E0E0E0; --white:#FBFCFF; --muted:#b9bdd2; --err:#ff8a7a;
+  --head:"Montserrat",system-ui,sans-serif; --body:"Poppins",system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.6 var(--body);padding-bottom:84px}
+img,video{max-width:100%;height:auto;display:block}
+a{color:var(--amber)}
+h1,h2,h3{font-family:var(--head);font-weight:700;color:var(--white);line-height:1.15;margin:0}
+h2{font-size:clamp(1.55rem,5.4vw,2.1rem);text-wrap:balance}
+h3{font-size:1.25rem}
+p{margin:0}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+.kicker{font:600 .78rem/1.3 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--copper);margin-bottom:10px}
+.lead{color:var(--text);margin-top:12px;max-width:56ch}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:14px 26px;border-radius:14px;border:2px solid var(--amber);
+  background:var(--amber);color:#111424;font:700 1.05rem/1.2 var(--head);text-decoration:none;cursor:pointer;width:100%}
+.btn:hover{background:var(--amber-dark);border-color:var(--amber-dark)}
+.btn.ghost{background:transparent;color:var(--amber)}
+.btn.ghost:hover{background:rgba(253,180,58,.12)}
+@media(min-width:560px){.btn.auto{width:auto}}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:28px 0 40px;overflow:hidden;
+  background:#111424 url("img/hero-poster.webp") center/cover no-repeat}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,20,36,.55) 0%,rgba(17,20,36,.5) 40%,rgba(17,20,36,.9) 100%)}
+.hero .wrap{position:relative;z-index:1;width:100%}
+.brand{display:flex;align-items:center;gap:14px;position:absolute;top:24px;left:20px;right:20px;z-index:1;max-width:920px;margin:0 auto}
+.brand img{width:64px;height:64px;border-radius:16px;background:#fff}
+.brand span{font:600 .78rem/1.3 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--copper)}
+.hero h1{font-size:clamp(2.1rem,9vw,3.4rem);max-width:15ch;text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.hero .lead{font-size:1.1rem;color:var(--white);text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hero .btn{margin-top:26px}
+.hero small{display:block;margin-top:12px;color:var(--text);font-size:.85rem}
+@media(min-width:760px){.hero .btn{width:auto;min-width:300px}}
+
+/* Servicios */
+.incl{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin-top:26px}
+.incl h3{font-size:1rem;color:var(--copper);margin-bottom:10px}
+.incl ul{list-style:none;margin:0;padding:0;display:grid;gap:8px 24px}
+@media(min-width:560px){.incl ul{grid-template-columns:1fr 1fr}}
+.incl li::before,.card li.ok::before{content:"✓";color:var(--amber);font-weight:700;margin-right:10px}
+.cards{display:grid;gap:18px;margin-top:20px}
+@media(min-width:760px){.cards{grid-template-columns:1fr 1fr}}
+.card{background:var(--surface);border:2px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.card.fav{border-color:var(--amber)}
+.card .for{color:var(--copper)}
+.card ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;flex:1}
+.card li.no{color:var(--muted)}
+.card li.no::before{content:"✗";color:var(--copper);font-weight:700;margin-right:10px}
+
+/* Pasos */
+.steps{display:grid;gap:18px;margin-top:26px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:var(--surface);border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.step .pic{aspect-ratio:4/3;background:var(--surface-2);display:flex;align-items:center;justify-content:center}
+.step .pic img{width:100%;height:100%;object-fit:cover}
+.step .pic svg{width:72px;height:72px;color:var(--amber)}
+.step div.t{padding:16px 18px 20px}
+.step .n{font:600 .78rem var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--copper)}
+.step p.h{font:600 1.1rem/1.3 var(--head);color:var(--white);margin-top:4px}
+
+/* Galería y carta */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}}
+.gal img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+@media(min-width:760px){.menu{grid-template-columns:repeat(3,1fr);gap:16px}}
+.drink{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.drink img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.drink div{padding:12px 14px 16px}
+.drink h3{font-size:1rem}
+.drink p{font-size:.88rem;color:var(--muted);margin-top:4px;line-height:1.45}
+
+/* Formulario */
+#cotiza{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+form{max-width:560px;margin:26px auto 0;display:grid;gap:22px}
+fieldset{border:0;padding:0;margin:0;min-width:0}
+legend,.lbl{font:600 .95rem var(--head);color:var(--white);padding:0;margin-bottom:10px;display:block}
+legend small,.lbl small{font:400 .85rem var(--body);color:var(--muted);margin-left:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chip span{display:inline-block;padding:10px 16px;border-radius:999px;border:2px solid var(--amber);color:var(--amber);font:500 .95rem var(--body);min-height:44px;line-height:1.5}
+.chip input:checked + span{background:var(--amber);color:#111424;font-weight:600}
+.chip input:focus-visible + span{outline:3px solid var(--white);outline-offset:2px}
+input[type=text],input[type=date]{width:100%;min-height:50px;padding:12px 14px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--white);font:400 1rem var(--body)}
+input[type=text]:focus,input[type=date]:focus{border-color:var(--amber);outline:none}
+input[aria-invalid=true]{border-color:var(--err)}
+.err{color:var(--err);font-size:.88rem;margin-top:8px}
+.promo{display:flex;gap:12px;align-items:flex-start;cursor:pointer}
+.promo input{width:22px;height:22px;margin-top:3px;accent-color:var(--amber);flex:none}
+.legal{font-size:.9rem;color:var(--text);line-height:1.55}
+.legal.small{color:var(--copper)}
+.gracias{display:none;background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.gracias.on{display:block}
+
+/* FAQ */
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-top:12px}
+summary{cursor:pointer;padding:16px 48px 16px 18px;font:600 1rem/1.4 var(--head);color:var(--white);list-style:none;position:relative;min-height:52px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--amber);font-weight:400}
+details[open] summary::after{content:"−"}
+details p{padding:0 18px 18px;color:var(--text)}
+.faq{max-width:720px}
+
+/* Cierre y pie */
+.cierre{text-align:center}
+.cierre .lead{margin-left:auto;margin-right:auto}
+.cierre .btn{margin-top:24px;max-width:420px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px}
+.tags span{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.9rem;color:var(--text)}
+footer{padding:28px 0 12px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);text-align:center}
+footer a{color:var(--muted)}
+
+/* Barra fija */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(17,20,36,.96);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+  transform:translateY(110%);transition:transform .25s ease;display:flex;justify-content:center}
+.sticky.on{transform:none}
+.sticky .btn{max-width:520px}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero video{display:none}
+  .sticky{transition:none}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPBJ5HSP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header class="hero" id="inicio">
+  <video autoplay muted loop playsinline preload="metadata" poster="img/hero-poster.webp" aria-hidden="true" tabindex="-1">
+    <source src="video/hero-landing.mp4" type="video/mp4">
+  </video>
+  <div class="brand">
+    <img src="img/logo.webp" width="64" height="64" alt="Guantanamera Bar">
+    <span>Bartender para eventos · Lima</span>
+  </div>
+  <div class="wrap">
+    <h1>Tú disfruta tu evento. La barra corre por nuestra cuenta.</h1>
+    <p class="lead">Bartender profesional, barra móvil y cócteles preparados al momento, en tu casa o local.</p>
+    <a class="btn" href="#cotiza" data-cta="hero">Cotizar mi evento</a>
+    <small>Respondemos de 8 a. m. a 10 p. m.</small>
+  </div>
+</header>
+
+<main>
+<section id="servicios">
+  <div class="wrap">
+    <p class="kicker">Nuestros servicios</p>
+    <h2>Dos formas de tener tu barra</h2>
+    <div class="incl">
+      <h3>Incluido en ambos</h3>
+      <ul>
+        <li>5 horas de servicio</li>
+        <li>Bartender uniformado</li>
+        <li>Barra móvil</li>
+        <li>Implementos de coctelería</li>
+        <li>Movilidad</li>
+        <li>Hasta 5 cócteles de la carta</li>
+      </ul>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <h3>Servicio Bartender</h3>
+        <p class="for">Para quien ya tiene sus bebidas o quiere controlar el gasto.</p>
+        <ul>
+          <li class="ok">Tú compras las bebidas con nuestra lista exacta</li>
+          <li class="no">Bebidas ilimitadas</li>
+          <li class="no">Insumos y cristalería incluidos</li>
+        </ul>
+        <button type="button" class="btn ghost" data-servicio="Bartender">Cotizar Bartender</button>
+      </article>
+      <article class="card fav">
+        <h3>Open Bar</h3>
+        <p class="for">Para olvidarte de todo.</p>
+        <ul>
+          <li class="ok">Bebidas ilimitadas</li>
+          <li class="ok">Insumos incluidos</li>
+          <li class="ok">Cristalería incluida</li>
+        </ul>
+        <button type="button" class="btn" data-servicio="Open Bar">Cotizar Open Bar</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="wrap">
+    <p class="kicker">Cómo funciona</p>
+    <h2>Tres pasos y listo</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="pic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.3A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 10h7M8.5 13.5h4.5"/></svg>
+        </div>
+        <div class="t"><p class="n">Paso 1</p><p class="h">Cotizas por WhatsApp</p></div>
+      </div>
+      <div class="step">
+        <div class="pic"><img src="img/paso-2-eliges-cocteles.webp" width="640" height="800" loading="lazy" alt="Cócteles de la carta listos para elegir"></div>
+        <div class="t"><p class="n">Paso 2</p><p class="h">Eliges tus 5 cócteles</p></div>
+      </div>
+      <div class="step">
+        <div class="pic"><img src="img/paso-3-llegamos-y-atendemos.webp" width="800" height="1000" loading="lazy" alt="El bartender atendiendo la barra en un evento"></div>
+        <div class="t"><p class="n">Paso 3</p><p class="h">Llegamos, montamos y atendemos</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria" style="padding-top:0">
+  <div class="wrap">
+    <div class="gal">
+      <img src="img/galeria-bartender-brindis.webp" width="800" height="1000" loading="lazy" alt="Bartender preparando un brindis">
+      <img src="img/galeria-bartender-gin.webp" width="800" height="1000" loading="lazy" alt="Bartender sirviendo un gin">
+      <img src="img/galeria-barra-frutas.webp" width="800" height="1000" loading="lazy" alt="Barra móvil decorada con frutas">
+      <img src="img/galeria-barra-noche.webp" width="800" height="1000" loading="lazy" alt="Barra móvil iluminada en un evento de noche">
+    </div>
+  </div>
+</section>
+
+<section id="carta" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Nuestra carta</p>
+    <h2>Elige 5 de nuestra carta</h2>
+    <div class="menu">
+      <article class="drink"><img src="img/coctel-gin-tonic.webp" width="600" height="600" loading="lazy" alt="Gin tonic"><div><h3>Gin tonic</h3><p>Gin, tónica y cítricos, bien frío.</p></div></article>
+      <article class="drink"><img src="img/coctel-gin-frutos-rojos.webp" width="600" height="600" loading="lazy" alt="Gin de frutos rojos"><div><h3>Gin de frutos rojos</h3><p>Gin con frutos rojos y tónica.</p></div></article>
+      <article class="drink"><img src="img/coctel-moscow-mule.webp" width="600" height="600" loading="lazy" alt="Moscow mule"><div><h3>Moscow mule</h3><p>Vodka, ginger beer y limón.</p></div></article>
+      <article class="drink"><img src="img/coctel-tiki.webp" width="600" height="600" loading="lazy" alt="Tiki"><div><h3>Tiki</h3><p>Ron y frutas tropicales.</p></div></article>
+      <article class="drink"><img src="img/coctel-sour.webp" width="600" height="600" loading="lazy" alt="Sour"><div><h3>Sour</h3><p>Cítrico y espumoso, un clásico.</p></div></article>
+      <article class="drink"><img src="img/coctel-copa-personalizada.webp" width="600" height="600" loading="lazy" alt="Piña colada"><div><h3>Piña colada</h3><p>Piña y coco, cremosa y suave.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonios: sección omitida a propósito hasta tener 3 testimonios reales y autorizados por cada cliente. -->
+
+<section id="cotiza">
+  <div class="wrap">
+    <p class="kicker">Tu cotización</p>
+    <h2>Cuéntanos de tu evento</h2>
+    <p class="lead">Llena lo básico y te cotizamos por WhatsApp. Se abrirá el chat con tu mensaje ya escrito.</p>
+
+    <form id="form" novalidate>
+      <fieldset data-grupo="servicio">
+        <legend>Servicio</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="servicio" value="Bartender"><span>Bartender</span></label>
+          <label class="chip"><input type="radio" name="servicio" value="Open Bar"><span>Open Bar</span></label>
+          <label class="chip"><input type="radio" name="servicio" value="Aún no sé"><span>Aún no sé</span></label>
+        </div>
+        <p class="err" id="err-servicio" role="alert" hidden>Elige un servicio.</p>
+      </fieldset>
+
+      <div>
+        <label class="lbl" for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" autocomplete="off">
+        <p class="err" id="err-fecha" role="alert" hidden></p>
+      </div>
+
+      <div>
+        <label class="lbl" for="distrito">Distrito</label>
+        <input type="text" id="distrito" name="distrito" list="distritos" autocomplete="off" placeholder="Escribe para buscar" inputmode="text">
+        <datalist id="distritos"></datalist>
+        <p class="err" id="err-distrito" role="alert" hidden></p>
+      </div>
+
+      <fieldset data-grupo="invitados">
+        <legend>Invitados</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="invitados" value="Hasta 30"><span>Hasta 30</span></label>
+          <label class="chip"><input type="radio" name="invitados" value="31–60"><span>31–60</span></label>
+          <label class="chip"><input type="radio" name="invitados" value="61–100"><span>61–100</span></label>
+          <label class="chip"><input type="radio" name="invitados" value="+100"><span>+100</span></label>
+        </div>
+        <p class="err" id="err-invitados" role="alert" hidden>Elige un rango de invitados.</p>
+      </fieldset>
+
+      <fieldset data-grupo="evento">
+        <legend>Tipo de evento <small>(opcional)</small></legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="evento" value="Cumpleaños"><span>Cumpleaños</span></label>
+          <label class="chip"><input type="radio" name="evento" value="Aniversario"><span>Aniversario</span></label>
+          <label class="chip"><input type="radio" name="evento" value="Boda"><span>Boda</span></label>
+          <label class="chip"><input type="radio" name="evento" value="Corporativo"><span>Corporativo</span></label>
+          <label class="chip"><input type="radio" name="evento" value="Reunión en casa"><span>Reunión en casa</span></label>
+          <label class="chip"><input type="radio" name="evento" value="Otro"><span>Otro</span></label>
+        </div>
+      </fieldset>
+
+      <div>
+        <label class="lbl" for="nombre">Tu nombre <small>(opcional)</small></label>
+        <input type="text" id="nombre" name="nombre" autocomplete="given-name" maxlength="60">
+      </div>
+
+      <label class="promo">
+        <input type="checkbox" id="promo" name="promo">
+        <span>Quiero recibir promociones y novedades de Guantanamera Bar por WhatsApp.</span>
+      </label>
+
+      <div>
+        <button type="submit" class="btn" id="enviar">Recibir mi cotización por WhatsApp</button>
+        <p class="legal" style="margin-top:14px">Al pulsar el botón, aceptas la <a href="privacidad.html" target="_blank" rel="noopener">Política de Privacidad</a> de Guantanamera Bar y autorizas el uso de tus datos personales para atender tu consulta y gestionar la cotización.</p>
+        <p class="legal small" style="margin-top:8px">Tu mensaje incluye un código de referencia para atenderte más rápido; no lo borres.</p>
+      </div>
+
+      <div class="gracias" id="gracias" role="status" aria-live="polite">
+        Abrimos WhatsApp con tu mensaje. Si no se abrió, <a id="reintento" href="#" target="_blank" rel="noopener">toca aquí</a>.
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq">
+    <p class="kicker">Dudas</p>
+    <h2>Preguntas frecuentes</h2>
+    <details>
+      <summary>¿Qué diferencia hay entre el servicio Bartender y el Open Bar?</summary>
+      <p>Los dos incluyen 5 horas de servicio, bartender uniformado, barra móvil, implementos de coctelería y movilidad, y eliges hasta 5 cócteles de la carta. En el servicio Bartender tú compras los insumos con nuestra lista exacta. En el Open Bar las bebidas ilimitadas, la cristalería y los insumos van incluidos.</p>
+    </details>
+    <details>
+      <summary>En el servicio Bartender, ¿qué insumos tengo que comprar?</summary>
+      <p>Según los cócteles que elijas, te enviamos la lista exacta de lo que necesitas comprar.</p>
+    </details>
+    <details>
+      <summary>¿Puedo pedir un cóctel que no está en la carta?</summary>
+      <p>Escríbenos por WhatsApp y te decimos si podemos prepararlo.</p>
+    </details>
+    <details>
+      <summary>¿Con cuánta anticipación debo reservar?</summary>
+      <p>Consulta la disponibilidad de tu fecha por WhatsApp: no necesitas tener todo definido para escribirnos.</p>
+    </details>
+    <details>
+      <summary>¿Atienden eventos pequeños?</summary>
+      <p>Sí. Atendemos eventos de todos los tamaños.</p>
+    </details>
+    <details>
+      <summary>¿A qué distritos llegan?</summary>
+      <p>Atendemos toda Lima Metropolitana. La movilidad está incluida.</p>
+    </details>
+  </div>
+</section>
+
+<section class="cierre">
+  <div class="wrap">
+    <h2>Consulta disponibilidad para tu fecha</h2>
+    <p class="lead">Atendemos toda Lima Metropolitana.</p>
+    <div class="tags"><span>Cumpleaños</span><span>Bodas</span><span>Quinceañeros</span><span>Eventos corporativos</span><span>Reuniones en casa</span></div>
+    <a class="btn" href="#cotiza" data-cta="cierre">Cotizar mi evento</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© Guantanamera Bar · <a href="privacidad.html" target="_blank" rel="noopener">Política de Privacidad</a></div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <a class="btn" href="#cotiza" data-cta="barra" tabindex="-1">Cotizar mi evento</a>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  // ----- Configuración de este negocio -----
+  var WA_NUMERO = '51986986258';          // con prefijo de país (51)
+  var LANDING = 'guantanamera_20261011';
+  var OBLIGATORIOS = ['servicio', 'fecha', 'distrito', 'invitados'];
+
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var form = $('#form');
+
+  // ----- Distritos -----
+  var DISTRITOS = ['Santiago de Surco', 'La Molina', 'Miraflores', 'San Isidro', 'San Borja', 'Barranco',
+    'Ancón', 'Ate', 'Breña', 'Carabayllo', 'Chaclacayo', 'Chorrillos', 'Cieneguilla', 'Comas', 'El Agustino', 'Independencia',
+    'Jesús María', 'La Victoria', 'Lima (Cercado)', 'Lince', 'Los Olivos', 'Lurigancho', 'Lurín', 'Magdalena del Mar',
+    'Pachacámac', 'Pucusana', 'Pueblo Libre', 'Puente Piedra', 'Punta Hermosa', 'Punta Negra', 'Rímac', 'San Bartolo',
+    'San Juan de Lurigancho', 'San Juan de Miraflores', 'San Luis', 'San Martín de Porres', 'San Miguel', 'Santa Anita',
+    'Santa María del Mar', 'Santa Rosa', 'Surquillo', 'Villa El Salvador', 'Villa María del Triunfo'];
+  var norm = function (t) { return String(t).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim(); };
+  var lista = $('#distritos');
+  DISTRITOS.forEach(function (d) { var o = document.createElement('option'); o.value = d; lista.appendChild(o); });
+  function distritoValido(v) {
+    var n = norm(v);
+    if (n === 'surco') n = 'santiago de surco';
+    for (var i = 0; i < DISTRITOS.length; i++) if (norm(DISTRITOS[i]) === n) return DISTRITOS[i];
+    return null;
+  }
+
+  // ----- Fecha mínima: hoy (hora local) -----
+  var hoy = new Date();
+  var pad = function (n) { return String(n).padStart(2, '0'); };
+  var hoyISO = hoy.getFullYear() + '-' + pad(hoy.getMonth() + 1) + '-' + pad(hoy.getDate());
+  $('#fecha').min = hoyISO;
+
+  // ----- Chips: se pueden desmarcar con un segundo toque -----
+  $$('.chip input').forEach(function (inp) {
+    inp.addEventListener('click', function () {
+      var grupo = $$('input[name="' + inp.name + '"]');
+      if (inp.dataset.was === '1') { inp.checked = false; inp.dataset.was = '0'; }
+      else { grupo.forEach(function (g) { g.dataset.was = '0'; }); inp.dataset.was = '1'; }
+    });
+  });
+
+  // ----- UTM (se guardan para la sesión) -----
+  var UTM = {};
+  (function () {
+    var claves = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
+    try {
+      var p = new URLSearchParams(location.search), hay = false;
+      claves.forEach(function (k) { if (p.get(k)) { UTM[k] = p.get(k).slice(0, 100); hay = true; } });
+      if (hay) sessionStorage.setItem('gb_utm', JSON.stringify(UTM));
+      else { var g = sessionStorage.getItem('gb_utm'); if (g) UTM = JSON.parse(g) || {}; }
+    } catch (e) { /* sin almacenamiento: se usan solo las de esta carga */ }
+  })();
+
+  // ----- Servicio desde las tarjetas / botones que bajan al formulario -----
+  $$('[data-servicio]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var radio = $('input[name="servicio"][value="' + b.dataset.servicio + '"]');
+      if (radio) {
+        radio.checked = true;
+        $$('input[name="servicio"]').forEach(function (g) { g.dataset.was = g === radio ? '1' : '0'; });
+      }
+      var destino = $('#cotiza');
+      if (destino) destino.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+  $$('[data-cta]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      window.dataLayer.push({ event: 'cta_click', landing: LANDING, cta: a.dataset.cta });
+    });
+  });
+
+  // ----- Mensaje y código de referencia -----
+  var EVENTOS = { 'Cumpleaños': 'un cumpleaños', 'Aniversario': 'un aniversario', 'Boda': 'una boda', 'Corporativo': 'un evento corporativo', 'Reunión en casa': 'una reunión en casa', 'Otro': 'un evento' };
+  var RANGOS = { 'Hasta 30': 'hasta 30', '31–60': '31 a 60', '61–100': '61 a 100', '+100': 'más de 100' };
+  function codigoRef() {
+    var abc = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789', r = '', buf = new Uint8Array(4);
+    (window.crypto || window.msCrypto).getRandomValues(buf);
+    for (var i = 0; i < 4; i++) r += abc[buf[i] % abc.length];
+    return 'GB-' + String(hoy.getFullYear()).slice(2) + pad(hoy.getMonth() + 1) + pad(hoy.getDate()) + '-' + r;
+  }
+  function armarMensaje(v, ref) {
+    var s = 'Hola Guantanamera Bar, ' + (v.nombre ? 'soy ' + v.nombre + '. Quiero' : 'quiero') + ' cotizar ';
+    s += v.servicio === 'Bartender' ? 'el servicio Bartender' : v.servicio === 'Open Bar' ? 'Open Bar' : 'un servicio de bartender';
+    s += ' para ' + (v.evento ? EVENTOS[v.evento] : 'mi evento');
+    if (v.fecha) {
+      var d = new Date(v.fecha + 'T12:00:00');
+      s += ' el ' + d.toLocaleDateString('es-PE', { weekday: 'long' }) + ' ' + pad(d.getDate()) + '/' + pad(d.getMonth() + 1);
+    }
+    if (v.distrito) s += ' en ' + v.distrito;
+    if (v.invitados) s += ', para ' + RANGOS[v.invitados] + ' invitados';
+    s += '.';
+    if (v.promo) s += ' Acepto recibir promociones y novedades por WhatsApp.';
+    return s + ' Ref: ' + ref;
+  }
+
+  // ----- Validación y envío -----
+  function valorGrupo(n) { var c = $('input[name="' + n + '"]:checked'); return c ? c.value : ''; }
+  function mostrarError(id, msg) { var e = $('#err-' + id); if (!e) return; if (msg) e.textContent = msg; e.hidden = false; }
+  function ocultarErrores() { $$('.err').forEach(function (e) { e.hidden = true; }); $$('[aria-invalid]').forEach(function (e) { e.removeAttribute('aria-invalid'); }); }
+
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    ocultarErrores();
+    var v = {
+      servicio: valorGrupo('servicio'), invitados: valorGrupo('invitados'), evento: valorGrupo('evento'),
+      fecha: $('#fecha').value, nombre: $('#nombre').value.trim().replace(/\s+/g, ' '),
+      distrito: $('#distrito').value.trim(), promo: $('#promo').checked
+    };
+    var primero = null, falla = function (el) { if (!primero) primero = el; };
+
+    if (OBLIGATORIOS.indexOf('servicio') >= 0 && !v.servicio) { mostrarError('servicio'); falla($('input[name="servicio"]')); }
+    if (v.fecha || OBLIGATORIOS.indexOf('fecha') >= 0) {
+      if (!v.fecha) { mostrarError('fecha', 'Elige la fecha de tu evento.'); $('#fecha').setAttribute('aria-invalid', 'true'); falla($('#fecha')); }
+      else if (v.fecha < hoyISO) { mostrarError('fecha', 'La fecha tiene que ser de hoy en adelante.'); $('#fecha').setAttribute('aria-invalid', 'true'); falla($('#fecha')); }
+    }
+    if (v.distrito || OBLIGATORIOS.indexOf('distrito') >= 0) {
+      var canon = v.distrito ? distritoValido(v.distrito) : null;
+      if (!v.distrito) { mostrarError('distrito', 'Escribe tu distrito y elígelo de la lista.'); $('#distrito').setAttribute('aria-invalid', 'true'); falla($('#distrito')); }
+      else if (!canon) { mostrarError('distrito', 'No encontramos ese distrito. Elígelo de la lista.'); $('#distrito').setAttribute('aria-invalid', 'true'); falla($('#distrito')); }
+      else v.distrito = canon;
+    }
+    if (OBLIGATORIOS.indexOf('invitados') >= 0 && !v.invitados) { mostrarError('invitados'); falla($('input[name="invitados"]')); }
+    if (primero) { primero.focus(); return; }
+
+    var ref = codigoRef();
+    var url = 'https://wa.me/' + WA_NUMERO + '?text=' + encodeURIComponent(armarMensaje(v, ref));
+    var ev2 = { event: 'whatsapp_click', landing: LANDING, servicio: v.servicio, invitados: v.invitados, distrito: v.distrito, ref: ref, promo: v.promo };
+    Object.keys(UTM).forEach(function (k) { ev2[k] = UTM[k]; });
+    window.dataLayer.push(ev2);
+
+    $('#reintento').href = url;
+    $('#gracias').classList.add('on');
+    var w = window.open(url, '_blank', 'noopener');
+    if (!w) location.href = url;   // si el navegador bloquea la ventana nueva
+  });
+
+  // ----- Barra fija: aparece al salir del hero y se oculta sobre el formulario -----
+  var barra = $('#sticky'), heroFuera = false, formDentro = false;
+  function pintarBarra() {
+    var on = heroFuera && !formDentro;
+    barra.classList.toggle('on', on);
+    barra.setAttribute('aria-hidden', on ? 'false' : 'true');
+    $('a', barra).tabIndex = on ? 0 : -1;
+  }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (e) { heroFuera = !e[0].isIntersecting; pintarBarra(); }, { threshold: 0.05 }).observe($('#inicio'));
+    new IntersectionObserver(function (e) { formDentro = e[0].isIntersecting; pintarBarra(); }, { threshold: 0.15 }).observe($('#cotiza'));
+  }
+
+  // ----- Movimiento reducido: sin video, queda el póster -----
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var vid = $('.hero video'); if (vid) vid.remove();
+  }
+})();
+</script>
+</body>
+</html>
