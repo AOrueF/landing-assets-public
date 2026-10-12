@@ -279,7 +279,7 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <p class="kicker">Tu cotización</p>
     <h2>Cuéntanos de tu evento</h2>
-    <p class="lead">Llena lo básico y te cotizamos por WhatsApp. Se abrirá el chat con tu mensaje ya escrito.</p>
+    <p class="lead">Todo es opcional: lo que no llenes lo completamos por WhatsApp. Se abrirá el chat con tu mensaje ya escrito.</p>
 
     <form id="form" novalidate>
       <fieldset data-grupo="servicio">
@@ -407,7 +407,7 @@ footer a{color:var(--muted)}
   // ----- Configuración de este negocio -----
   var WA_NUMERO = '51986986258';          // con prefijo de país (51)
   var LANDING = 'guantanamera_20261011';
-  var OBLIGATORIOS = ['servicio', 'fecha', 'distrito', 'invitados'];
+  var OBLIGATORIOS = [];                   // todo es opcional: lo que falte se completa por WhatsApp
 
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
