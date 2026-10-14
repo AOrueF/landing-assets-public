@@ -103,13 +103,21 @@ section{padding:56px 0}
 .gal{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
 @media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}}
 .gal img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px}
-.menu{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
-@media(min-width:760px){.menu{grid-template-columns:repeat(3,1fr);gap:16px}}
+.menu{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:24px}
+.drink{flex:0 0 calc(50% - 6px)}
+@media(min-width:760px){.menu{gap:16px}.drink{flex-basis:calc(33.333% - 11px)}}
 .drink{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
 .drink img{width:100%;aspect-ratio:1/1;object-fit:cover}
 .drink div{padding:12px 14px 16px}
 .drink h3{font-size:1rem}
 .drink p{font-size:.88rem;color:var(--muted);margin-top:4px;line-height:1.45}
+.carta-completa{margin-top:20px}
+.carta-completa .cols{display:grid;gap:4px 28px;padding:0 18px 18px}
+@media(min-width:560px){.carta-completa .cols{grid-template-columns:1fr 1fr}.carta-completa .dir{grid-row:span 2}}
+@media(min-width:760px){.carta-completa .cols{grid-template-columns:repeat(3,1fr)}.carta-completa .dir{grid-row:auto}}
+.carta-completa h3{font-size:.95rem;color:var(--copper);margin:6px 0 8px}
+.carta-completa ul{margin:0;padding:0;list-style:none}
+.carta-completa li{padding:3px 0;color:var(--text)}
 
 /* Testimonios */
 .testis{display:grid;gap:16px;margin-top:24px}
@@ -205,7 +213,7 @@ footer a{color:var(--muted)}
         <li>Barra móvil</li>
         <li>Implementos de coctelería</li>
         <li>Movilidad</li>
-        <li>Hasta 5 cócteles de la carta</li>
+        <li>5 cócteles: 2 licuados y 3 directos</li>
       </ul>
     </div>
     <div class="cards">
@@ -270,15 +278,25 @@ footer a{color:var(--muted)}
 <section id="carta" style="padding-top:0">
   <div class="wrap">
     <p class="kicker">Nuestra carta</p>
-    <h2>Elige 5 de nuestra carta</h2>
+    <h2>Algunos favoritos de nuestra carta</h2>
+    <p class="lead">Eliges 5 entre los 28 cócteles de nuestra carta: 2 licuados y 3 directos. También hay opciones sin alcohol.</p>
     <div class="menu">
+      <article class="drink"><img src="img/coctel-machu-picchu.webp" width="600" height="600" loading="lazy" alt="Machu Picchu"><div><h3>Machu Picchu</h3><p>Pisco, naranja, granadina y licor de menta.</p></div></article>
+      <article class="drink"><img src="img/coctel-pina-colada.webp" width="600" height="600" loading="lazy" alt="Piña colada"><div><h3>Piña colada</h3><p>Piña y coco, cremosa y suave.</p></div></article>
       <article class="drink"><img src="img/coctel-gin-tonic.webp" width="600" height="600" loading="lazy" alt="Gin tonic"><div><h3>Gin tonic</h3><p>Gin, tónica y cítricos, bien frío.</p></div></article>
-      <article class="drink"><img src="img/coctel-gin-frutos-rojos.webp" width="600" height="600" loading="lazy" alt="Gin de frutos rojos"><div><h3>Gin de frutos rojos</h3><p>Gin con frutos rojos y tónica.</p></div></article>
-      <article class="drink"><img src="img/coctel-moscow-mule.webp" width="600" height="600" loading="lazy" alt="Moscow mule"><div><h3>Moscow mule</h3><p>Vodka, ginger beer y limón.</p></div></article>
-      <article class="drink"><img src="img/coctel-tiki.webp" width="600" height="600" loading="lazy" alt="Tiki"><div><h3>Tiki</h3><p>Ron y frutas tropicales.</p></div></article>
+      <article class="drink"><img src="img/coctel-tequila-sunrise.webp" width="600" height="600" loading="lazy" alt="Tequila sunrise"><div><h3>Tequila sunrise</h3><p>Tequila, naranja y granadina.</p></div></article>
+      <article class="drink"><img src="img/coctel-gin-frutos-rojos.webp" width="600" height="600" loading="lazy" alt="Gin tonic de frutos rojos"><div><h3>Gin tonic de frutos rojos</h3><p>Gin con frutos rojos y tónica.</p></div></article>
       <article class="drink"><img src="img/coctel-sour.webp" width="600" height="600" loading="lazy" alt="Sour"><div><h3>Sour</h3><p>Cítrico y espumoso, un clásico.</p></div></article>
-      <article class="drink"><img src="img/coctel-copa-personalizada.webp" width="600" height="600" loading="lazy" alt="Piña colada"><div><h3>Piña colada</h3><p>Piña y coco, cremosa y suave.</p></div></article>
+      <article class="drink"><img src="img/coctel-orgasmo.webp" width="600" height="600" loading="lazy" alt="Orgasmo"><div><h3>Orgasmo</h3><p>Baileys, amaretto y licor de café.</p></div></article>
     </div>
+    <details class="carta-completa">
+      <summary>Ver la carta completa (28 cócteles)</summary>
+      <div class="cols">
+        <div><h3>Licuados (8)</h3><ul><li>Pisco Sour</li><li>Maracuyá Sour</li><li>Piña Colada</li><li>Blue Hawaiian</li><li>Algarrobina</li><li>Daiquiri de Durazno</li><li>Daiquiri de Fresa</li><li>Pink Panther</li></ul></div>
+        <div class="dir"><h3>Directos (13)</h3><ul><li>Chilcano de Pisco</li><li>Chilcano de Maracuyá</li><li>Machu Picchu</li><li>Cuba Libre</li><li>Screwdriver</li><li>Mojito</li><li>Primavera</li><li>Tequila Sunrise</li><li>Laguna Azul</li><li>Gin Tonic</li><li>Gin Tonic de Frutos Rojos</li><li>Orgasmo</li><li>Planters Punch</li></ul></div>
+        <div><h3>Sin alcohol (7)</h3><ul><li>Shirley Temple</li><li>Algarrobina</li><li>Piña Colada</li><li>Pink Panther</li><li>Blue Hawaiian</li><li>Laguna Azul</li><li>Primavera</li></ul></div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -386,7 +404,7 @@ footer a{color:var(--muted)}
     <h2>Preguntas frecuentes</h2>
     <details>
       <summary>¿Qué diferencia hay entre el servicio de Barra Móvil y el Open Bar?</summary>
-      <p>Los dos incluyen 5 horas de servicio, bartender uniformado, barra móvil, implementos de coctelería y movilidad, y eliges hasta 5 cócteles de la carta. En el servicio de Barra Móvil tú compras los insumos con nuestra lista exacta. En el Open Bar las bebidas ilimitadas, la cristalería y los insumos van incluidos.</p>
+      <p>Los dos incluyen 5 horas de servicio, bartender uniformado, barra móvil, implementos de coctelería y movilidad, y eliges 5 cócteles de la carta: 2 licuados y 3 directos. En el servicio de Barra Móvil tú compras los insumos con nuestra lista exacta. En el Open Bar las bebidas ilimitadas, la cristalería y los insumos van incluidos.</p>
     </details>
     <details>
       <summary>En el servicio de Barra Móvil, ¿qué insumos tengo que comprar?</summary>
