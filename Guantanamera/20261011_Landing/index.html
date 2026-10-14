@@ -114,9 +114,11 @@ section{padding:56px 0}
 /* Testimonios */
 .testis{display:grid;gap:16px;margin-top:24px}
 @media(min-width:760px){.testis{grid-template-columns:repeat(3,1fr)}}
-.testi{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+.testi{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px 22px 24px;display:flex;flex-direction:column;gap:18px}
+.testi::before{content:"“";font:700 3.2rem/.5 var(--head);color:var(--amber);height:22px}
 .testi blockquote{margin:0;color:var(--white);font-size:1rem;line-height:1.6}
-.testi figcaption{color:var(--copper);font:600 .88rem/1.4 var(--head)}
+.testi figcaption strong{display:block;font:600 1rem/1.3 var(--head);color:var(--white)}
+.testi figcaption span{display:block;margin-top:2px;font-size:.85rem;color:var(--copper)}
 
 /* Formulario */
 #cotiza{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -208,14 +210,14 @@ footer a{color:var(--muted)}
     </div>
     <div class="cards">
       <article class="card">
-        <h3>Servicio Bartender</h3>
+        <h3>Servicio de Barra Móvil</h3>
         <p class="for">Para quien ya tiene sus bebidas o quiere controlar el gasto.</p>
         <ul>
           <li class="ok">Tú compras las bebidas con nuestra lista exacta</li>
           <li class="no">Bebidas ilimitadas</li>
           <li class="no">Insumos y cristalería incluidos</li>
         </ul>
-        <button type="button" class="btn ghost" data-servicio="Bartender">Cotizar Bartender</button>
+        <button type="button" class="btn ghost" data-servicio="Barra móvil">Cotizar Barra Móvil</button>
       </article>
       <article class="card fav">
         <h3>Open Bar</h3>
@@ -280,23 +282,23 @@ footer a{color:var(--muted)}
   </div>
 </section>
 
-<!-- Testimonios reales de clientes (2026-10-14): comentarios de Instagram y un mensaje de WhatsApp, publicados con la autorización de cada cliente (el negocio conserva el permiso por escrito). Texto tal cual lo escribieron; solo se recortó el saludo y la despedida del mensaje de WhatsApp y una frase del segundo comentario, marcada con […]. -->
+<!-- Testimonios reales de clientes (2026-10-14): comentarios de Instagram y un mensaje de WhatsApp, publicados con la autorización de cada cliente (el negocio conserva el permiso por escrito). Son frases completas y textuales: no se reescribió ninguna palabra. -->
 <section id="testimonios" style="padding-top:0">
   <div class="wrap">
     <p class="kicker">Lo que dicen nuestros clientes</p>
     <h2>Eventos que se disfrutan</h2>
     <div class="testis">
       <figure class="testi">
-        <blockquote>“Muchas gracias por el excelente servicio. Todo A1, todos mis invitados estuvieron muy contentos con el servicio y los tragos.”</blockquote>
-        <figcaption>Gio · mensaje por WhatsApp</figcaption>
+        <blockquote>Además de preparar deliciosos cócteles y brindar una atención impecable, demostró ser una persona muy honesta, amable y profesional.</blockquote>
+        <figcaption><strong>Paola S.</strong><span>Cumpleaños · vía Instagram</span></figcaption>
       </figure>
       <figure class="testi">
-        <blockquote>“Quiero recomendar a nuestro bartender por el excelente trabajo que hizo en mi cumpleaños. Además de preparar deliciosos cócteles y brindar una atención impecable, demostró ser una persona muy honesta, amable y profesional. […] Sin duda lo volvería a contratar y lo recomiendo al 100%.”</blockquote>
-        <figcaption>@paobaby · comentario en Instagram</figcaption>
+        <blockquote>Muchas gracias por el excelente servicio. Todo A1, todos mis invitados estuvieron muy contentos con el servicio y los tragos.</blockquote>
+        <figcaption><strong>Gio</strong><span>Cumpleaños · vía WhatsApp</span></figcaption>
       </figure>
       <figure class="testi">
-        <blockquote>“Excelente trato y servicio A1… muy recomendables.”</blockquote>
-        <figcaption>Alexandra S. · comentario en Instagram</figcaption>
+        <blockquote>Excelente trato y servicio A1… muy recomendables.</blockquote>
+        <figcaption><strong>Alexandra S.</strong><span>Quinceañero de su hija · vía Instagram</span></figcaption>
       </figure>
     </div>
   </div>
@@ -312,7 +314,7 @@ footer a{color:var(--muted)}
       <fieldset data-grupo="servicio">
         <legend>Servicio</legend>
         <div class="chips">
-          <label class="chip"><input type="radio" name="servicio" value="Bartender"><span>Bartender</span></label>
+          <label class="chip"><input type="radio" name="servicio" value="Barra móvil"><span>Barra móvil</span></label>
           <label class="chip"><input type="radio" name="servicio" value="Open Bar"><span>Open Bar</span></label>
           <label class="chip"><input type="radio" name="servicio" value="Aún no sé"><span>Aún no sé</span></label>
         </div>
@@ -383,11 +385,11 @@ footer a{color:var(--muted)}
     <p class="kicker">Dudas</p>
     <h2>Preguntas frecuentes</h2>
     <details>
-      <summary>¿Qué diferencia hay entre el servicio Bartender y el Open Bar?</summary>
-      <p>Los dos incluyen 5 horas de servicio, bartender uniformado, barra móvil, implementos de coctelería y movilidad, y eliges hasta 5 cócteles de la carta. En el servicio Bartender tú compras los insumos con nuestra lista exacta. En el Open Bar las bebidas ilimitadas, la cristalería y los insumos van incluidos.</p>
+      <summary>¿Qué diferencia hay entre el servicio de Barra Móvil y el Open Bar?</summary>
+      <p>Los dos incluyen 5 horas de servicio, bartender uniformado, barra móvil, implementos de coctelería y movilidad, y eliges hasta 5 cócteles de la carta. En el servicio de Barra Móvil tú compras los insumos con nuestra lista exacta. En el Open Bar las bebidas ilimitadas, la cristalería y los insumos van incluidos.</p>
     </details>
     <details>
-      <summary>En el servicio Bartender, ¿qué insumos tengo que comprar?</summary>
+      <summary>En el servicio de Barra Móvil, ¿qué insumos tengo que comprar?</summary>
       <p>Según los cócteles que elijas, te enviamos la lista exacta de lo que necesitas comprar.</p>
     </details>
     <details>
@@ -513,7 +515,7 @@ footer a{color:var(--muted)}
   }
   function armarMensaje(v, ref) {
     var s = 'Hola Guantanamera Bar, ' + (v.nombre ? 'soy ' + v.nombre + '. Quiero' : 'quiero') + ' cotizar ';
-    s += v.servicio === 'Bartender' ? 'el servicio Bartender' : v.servicio === 'Open Bar' ? 'Open Bar' : 'un servicio de bartender';
+    s += v.servicio === 'Barra móvil' ? 'el servicio de Barra Móvil' : v.servicio === 'Open Bar' ? 'Open Bar' : 'un servicio de bartender';
     s += ' para ' + (v.evento ? EVENTOS[v.evento] : 'mi evento');
     if (v.fecha) {
       var d = new Date(v.fecha + 'T12:00:00');
